@@ -1,8 +1,11 @@
 {
-  "name": "osx-cpu-temp",
-  "version": "0.0.0",
-  "repo": "lavoiesl/osx-cpu-temp",
-  "description": "Outputs current CPU temperature in °C for OSX",
-  "keywords": ["osx", "cpu", "temperature", "sensors"],
-  "install": "make install"
+    "name": "macos-cpu-temp",
+    "version": "0.0.1",
+    "repo": "istvan-antal/macos-cpu-temp",
+    "description": "Outputs current CPU temperature in °C for OSX",
+    "os": ["darwin"],
+    "keywords": ["osx", "cpu", "temperature", "sensors"],
+    "bin": {
+      "macos-cpu-temp": "./macos-cpu-temp"
+    }
 }

@@ -3,11 +3,11 @@ CC     = cc
 CFLAGS = -O2 -Wall
 INC    = -framework IOKit
 PREFIX = /usr/local
-EXEC   = osx-cpu-temp
+EXEC   = macos-cpu-temp
 
 build : $(EXEC)
 
-clean : 
+clean :
 	rm $(EXEC)
 
 $(EXEC) : smc.c

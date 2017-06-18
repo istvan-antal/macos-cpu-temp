@@ -1,6 +1,6 @@
 /*
- * Apple System Management Control (SMC) Tool 
- * Copyright (C) 2006 devnull 
+ * Apple System Management Control (SMC) Tool
+ * Copyright (C) 2006 devnull
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -43,7 +43,7 @@ UInt32 _strtoul(char *str, int size, int base)
 void _ultostr(char *str, UInt32 val)
 {
     str[0] = '\0';
-    sprintf(str, "%c%c%c%c", 
+    sprintf(str, "%c%c%c%c",
             (unsigned int) val >> 24,
             (unsigned int) val >> 16,
             (unsigned int) val >> 8,
@@ -190,7 +190,7 @@ int main(int argc, char *argv[])
       temperature = convertToFahrenheit(temperature);
     }
 
-    printf("%0.1f°%c\n", temperature, scale);
+    printf("%0.1f\n", temperature);
 
     return 0;
 }
